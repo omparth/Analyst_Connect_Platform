@@ -1,4 +1,3 @@
-// components/about.tsx
 
 'use client';
 
@@ -45,7 +44,6 @@ const itemVariants = {
 export function AboutSection() {
   return (
     <div className="min-h-screen bg-[#fafafa] dark:bg-[#060606] selection:bg-primary/30 selection:text-primary">
-      {/* Decorative Background */}
       <div className="absolute left-0 top-0 -z-10 h-[500px] w-full bg-gradient-to-b from-primary/5 to-transparent" />
 
       <motion.section
@@ -55,7 +53,6 @@ export function AboutSection() {
         animate="visible"
       >
         <div className="space-y-16">
-          {/* Header Section */}
           <div className="max-w-3xl">
             <motion.div
               variants={itemVariants}
@@ -87,9 +84,7 @@ export function AboutSection() {
             </motion.p>
           </div>
 
-          {/* Main Bento Grid */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {/* Mission Card */}
             <motion.div
               variants={itemVariants}
               className="group relative overflow-hidden rounded-[2.5rem] border border-border bg-white p-8 shadow-sm transition-colors hover:border-primary/50 dark:bg-zinc-900/50 md:col-span-2 md:p-12"
@@ -115,7 +110,6 @@ export function AboutSection() {
               </div>
             </motion.div>
 
-            {/* Stats Card */}
             <motion.div
               variants={itemVariants}
               className="flex flex-col justify-between rounded-[2.5rem] border border-border bg-foreground p-8 text-background"
@@ -147,7 +141,6 @@ export function AboutSection() {
               </div>
             </motion.div>
 
-            {/* Vision Card */}
             <motion.div
               variants={itemVariants}
               className="rounded-[2.5rem] border border-border bg-white p-8 shadow-sm transition-all hover:shadow-xl dark:bg-zinc-900/50"
@@ -165,7 +158,6 @@ export function AboutSection() {
               </p>
             </motion.div>
 
-            {/* Credibility Card */}
             <motion.div
               variants={itemVariants}
               className="relative grid grid-cols-1 gap-8 overflow-hidden rounded-[2.5rem] border border-border bg-primary p-8 text-primary-foreground md:col-span-2 md:grid-cols-2 md:p-12"
@@ -202,7 +194,6 @@ export function AboutSection() {
             </motion.div>
           </div>
 
-          {/* Features */}
           <div className="pt-10">
             <motion.h2
               variants={itemVariants}
