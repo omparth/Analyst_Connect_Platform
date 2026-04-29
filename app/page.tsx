@@ -50,10 +50,8 @@ const features = [
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-background">
-      {/* Decorative Background Elements */}
       <div className="absolute top-0 left-1/2 -z-10 h-[600px] w-full -translate-x-1/2 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent opacity-70" />
 
-      {/* Hero Section */}
       <section className="relative mx-auto max-w-7xl px-6 py-24 md:py-40">
         <motion.div
           className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2"
@@ -105,12 +103,10 @@ export default function Home() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="relative lg:ml-auto">
-            {/* Elegant Graphic Representation */}
             <div className="relative h-[450px] w-full max-w-[500px] overflow-hidden rounded-3xl border border-border bg-card/50 backdrop-blur-sm p-1 shadow-2xl shadow-primary/10">
                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10" />
                <div className="relative h-full w-full rounded-[22px] bg-card p-10 flex flex-col justify-center items-center overflow-hidden">
                   
-                  {/* Floating Elements for visual interest */}
                   <motion.div 
                     animate={{ y: [0, -15, 0] }}
                     transition={{ duration: 4, repeat: Infinity }}                    className="absolute top-10 right-10 bg-background border border-border p-4 rounded-2xl shadow-sm"
@@ -145,7 +141,6 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Features Section */}
       <section className="bg-muted/30 py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
           <motion.div
@@ -195,7 +190,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="mx-auto max-w-7xl px-6 py-24">
         <motion.div
           className="relative overflow-hidden rounded-[2.5rem] bg-foreground px-8 py-20 text-center shadow-2xl"
@@ -203,7 +197,6 @@ export default function Home() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
         >
-          {/* Subtle background patterns */}
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <div className="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-primary blur-[100px]" />
             <div className="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-primary blur-[100px]" />
