@@ -50,7 +50,6 @@ export default function AnalystsPage() {
 
   return (
     <div className="min-h-screen bg-[#fafafa] dark:bg-[#0a0a0a]">
-      {/* Header Section */}
       <div className="bg-white dark:bg-black border-b border-border/60">
         <section className="mx-auto max-w-7xl px-6 py-16">
           <motion.div
@@ -77,11 +76,9 @@ export default function AnalystsPage() {
         </section>
       </div>
 
-      {/* Toolbar & Filter Bar */}
       <div className="sticky top-0 z-40 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-border/60 shadow-sm">
         <section className="mx-auto max-w-7xl px-6 py-4">
           <div className="flex flex-col lg:flex-row gap-4 items-center">
-            {/* Search Input Container */}
             <div className="relative w-full lg:flex-1 group">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground group-focus-within:text-primary transition-colors" />
               <input
@@ -120,7 +117,6 @@ export default function AnalystsPage() {
             </div>
           </div>
 
-          {/* Filter Drawer */}
           <AnimatePresence>
             {showFilters && (
               <motion.div
@@ -130,7 +126,6 @@ export default function AnalystsPage() {
                 className="overflow-hidden border-t mt-4 pt-6"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pb-6">
-                  {/* Expertise Chips */}
                   <div>
                     <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-4">Industries</h3>
                     <div className="flex flex-wrap gap-2">
@@ -150,7 +145,6 @@ export default function AnalystsPage() {
                     </div>
                   </div>
 
-                  {/* Rating & Actions */}
                   <div className="flex flex-col justify-between">
                     <div>
                       <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-4">Minimum Rating</h3>
@@ -187,7 +181,6 @@ export default function AnalystsPage() {
         </section>
       </div>
 
-      {/* Results Section */}
       <section className="mx-auto max-w-7xl px-6 py-12">
         {filteredAnalysts.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-32 text-center">
