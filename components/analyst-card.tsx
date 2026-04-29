@@ -19,7 +19,6 @@ export function AnalystCard({ analyst }: AnalystCardProps) {
     >
       <Link href={`/analysts/${analyst.id}`}>
         <div className="rounded-xl border border-border bg-card p-6 h-full hover:shadow-xl hover:border-primary/50 transition-all duration-300 cursor-pointer">
-          {/* Header with image and verified badge */}
           <div className="flex gap-4 mb-4">
             <div className="relative">
               <Image
@@ -41,10 +40,8 @@ export function AnalystCard({ analyst }: AnalystCardProps) {
             </div>
           </div>
 
-          {/* Bio */}
           <p className="text-sm text-foreground/70 mb-4 line-clamp-2">{analyst.bio}</p>
 
-          {/* Stats */}
           <div className="flex gap-4 mb-4 text-sm">
             <div className="flex items-center gap-1">
               <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
@@ -53,7 +50,6 @@ export function AnalystCard({ analyst }: AnalystCardProps) {
             </div>
           </div>
 
-          {/* Location and response time */}
           <div className="space-y-2 mb-4">
             <div className="flex items-center gap-2 text-sm text-foreground/60">
               <MapPin className="h-4 w-4" />
@@ -65,7 +61,6 @@ export function AnalystCard({ analyst }: AnalystCardProps) {
             </div>
           </div>
 
-          {/* Expertise tags */}
           <div className="flex flex-wrap gap-2 mb-4">
             {analyst.expertise.slice(0, 2).map((exp, i) => (
               <span
@@ -82,7 +77,6 @@ export function AnalystCard({ analyst }: AnalystCardProps) {
             )}
           </div>
 
-          {/* Hourly rate and CTA */}
           <div className="flex items-center justify-between">
             <div>
               <p className="text-xs text-foreground/60">Hourly Rate</p>
