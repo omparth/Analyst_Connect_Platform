@@ -1,4 +1,3 @@
-// app/about/page.tsx
 
 import { AboutSection } from '@/components/about';
 
