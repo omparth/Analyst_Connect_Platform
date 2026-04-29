@@ -52,7 +52,6 @@ export default function AnalystDetailPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-[#fafafa] dark:bg-[#0a0a0a] pb-20">
-      {/* Top Navigation */}
       <div className="sticky top-0 z-50 w-full bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-border/50">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
           <Link
@@ -76,10 +75,8 @@ export default function AnalystDetailPage({ params }: PageProps) {
         animate="visible"
       >
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
-          {/* Left Column: Main Profile Info */}
           <motion.div className="lg:col-span-2 space-y-8" variants={itemVariants}>
             
-            {/* Profile Header Card */}
             <div className="relative overflow-hidden rounded-[2.5rem] border border-border bg-white dark:bg-black p-8 md:p-12 shadow-sm">
               <div className="absolute top-0 right-0 p-8">
                  <Award className="h-12 w-12 text-primary/10" />
@@ -134,7 +131,6 @@ export default function AnalystDetailPage({ params }: PageProps) {
                 </div>
               </div>
 
-              {/* Bio Section */}
               <div className="mt-12 pt-10 border-t border-border/50">
                 <h2 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-4">Professional Brief</h2>
                 <p className="text-xl leading-relaxed text-foreground/80 font-medium italic">
@@ -142,7 +138,6 @@ export default function AnalystDetailPage({ params }: PageProps) {
                 </p>
               </div>
 
-              {/* Expertise Chips */}
               <div className="mt-10">
                 <h2 className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-6">Market Specialization</h2>
                 <div className="flex flex-wrap gap-3">
@@ -160,10 +155,8 @@ export default function AnalystDetailPage({ params }: PageProps) {
             </div>
           </motion.div>
 
-          {/* Right Column: Booking Sidebar */}
           <motion.div className="lg:col-span-1" variants={itemVariants}>
             <div className="sticky top-28 space-y-6">
-              {/* Pricing Card */}
               <div className="rounded-[2rem] border-2 border-primary/20 bg-white dark:bg-black p-8 shadow-xl shadow-primary/5">
                 <div className="flex items-end gap-1 mb-8">
                   <span className="text-5xl font-black tracking-tighter">${analyst.hourlyRate}</span>
@@ -187,7 +180,6 @@ export default function AnalystDetailPage({ params }: PageProps) {
                 </p>
               </div>
 
-              {/* Trust Card */}
               <div className="rounded-3xl border border-border bg-muted/30 p-6">
                 <h3 className="flex items-center gap-2 font-bold text-foreground mb-4">
                   <ShieldCheck className="h-5 w-5 text-primary" />
